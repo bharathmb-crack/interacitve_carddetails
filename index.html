@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="bg-image" src="images/bg-main-desktop.png" alt="side-banner">
+      <div class="card_details">
+        <form action="" class="formm">
+          <div class="details">
+            <div class="div">
+              <label for="">CARDHOLDERS NAME</label>
+              <input type="text" placeholder="eg. Jane Appleased" id="input_cardName" onkeyup="validateName()">
+              <span id="error-name"></span>
+            </div>
+            <div class="div">
+              <label for="">CARD NUMBER</label>
+              <input type="text" placeholder="eg: 1234 5678 9123 0000" id="input_cardNumber" onkeyup="validateCardNo()">
+              <span id="error-cardNo"></span>
+            </div>
+            <div class="div">
+              <label for="">EXPIERATION DATE</label>
+              <div class="date">
+                <input type="text" style="width: 50px" placeholder="MM" id="input_month" onkeyup="validateMonth()">
+                <input type="text" style="width: 50px" placeholder="YY" id="input_year" onkeyup="validateYear()">
+                <input type="text" style="width: 80px" placeholder="eg. 123" id="input_cvv" onkeyup="validateCvv()">
+              </div>
+              <span id="error-month"></span>
+              <span id="error-year"></span>
+              <span id="error-cvv"></span>
+            </div>
+            <button id=" submit" onclick="/Thank you/index.html">CONFIRM</button>
+            <span id="submit-error"></spanid>
+          </div>
+        </form>
+      </div>
+    </div>
+    <img class="card-back" src="images/bg-card-back.png" alt="card-back">
+    <img class="card-front" src="images/bg-card-front.png" alt="card-back">
+    <img class="card-logo" src="images/card-logo.svg" alt="card-logo">
+    <div class="card-number">
+      <div class="zeros">
+        <button href="" onclick="location.href='www.google.com'"></button>
+        <p>0 0 0 0</p>
+        <p>0 0 0 0</p>
+        <p>0 0 0 0</p>
+        <p>0 0 0 0</p>
+      </div>
+      <div class="name">
+        <p>JANE APPLESEED</p>
+        <p>00/00</p>
+      </div>
+    </div>
+    <p class="back-zero">0 0 0</p>
+
+
+    <script src="scripts.js">
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  column-gap: 400px;
+}
+
+.card_details {
+  padding-top: 150px;
+  width: 400px;
+  font-weight: bold;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+label {
+  font-size: 13px;
+}
+input {
+  border-radius: 3px;
+  font-size: 15px;
+  height: 35px;
+  border-color: #dddddd;
+  border-style: solid;
+  border-width: 3px;
+}
+#input_cardName,
+#input_cardNumber {
+  padding: 6px 10px;
+}
+
+#input_cvv {
+  padding: 3px 2px;
+}
+.details .div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.date {
+  display: grid;
+  grid-template-columns: 50px 50px 70px;
+  column-gap: 20px;
+}
+
+.card-back {
+  position: relative;
+  left: 250px;
+  bottom: 500px;
+}
+.card-front {
+  position: relative;
+  left: -280px;
+  bottom: 800px;
+}
+.card-logo {
+  position: relative;
+  bottom: 980px;
+  left: -700px;
+}
+
+.details span {
+  font-weight: normal;
+  font-size: 15px;
+  color: crimson;
+  position: relative;
+  bottom: 10px;
+}
+
+.card-number {
+  position: relative;
+  bottom: 930px;
+  width: 400px;
+  left: 220px;
+  font-weight: bold;
+  color: bisque;
+}
+.zeros {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-bottom: 20px;
+}
+
+.name {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 120px;
+}
+
+.back-zero {
+  position: relative;
+  bottom: 700px;
+  width: 400px;
+  left: 600px;
+  font-weight: bold;
+  color: bisque;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.details p {
+  color: seagreen;
+}
